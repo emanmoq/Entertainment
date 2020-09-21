@@ -3,6 +3,7 @@
     src:url("../fonts/JosefinSans-Regular.ttf")
 }
 @font-face{
+    font-family:JosefinSans-SemiBold;
     src:url("../fonts/JosefinSans-SemiBold.ttf")
 }
 
@@ -499,6 +500,37 @@ margin-right:50px;
      color:white;
      margin-top:50px;
  }
+
+@media (max-width:1023px){
+    .heroSection {
+        margin-top: 50px;
+        padding-bottom: 80px;
+    }
+    .form-group{
+        width:100%;
+        margin-right:0;
+    }
+    .blogContainer form{
+        padding:10px;
+        float: none;
+        width:100%;
+    }
+    #contactUs .blogContainer{
+        height:auto;
+        padding:10px;
+    }
+footer{
+    margin-top:30px;
+    padding-bottom:30px;
+}
+.formImg{
+    width:100%;
+    margin-top:10px;
+    float: none;
+    position: relative;
+}
+
+}
 @media(max-width:767px){
     .heroSection {
         vertical-align: middle;
