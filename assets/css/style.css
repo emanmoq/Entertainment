@@ -500,6 +500,21 @@ margin-right:50px;
      color:white;
      margin-top:50px;
  }
+ @media(max-width:1100px){
+    .blogContainer form{
+        padding:10px;
+    }    
+    .form-group{
+        width:100%;
+        margin-right:0;
+    }
+    #contactUs .blogContainer{
+        height:600px;
+    }
+    .formImg{
+        height: 600px;;
+    }
+ }
 
 @media (max-width:1023px){
     .heroSection {
