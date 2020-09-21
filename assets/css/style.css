@@ -1,0 +1,572 @@
+@font-face{
+    font-family:JosefinSans-Regular;
+    src:url("../fonts/JosefinSans-Regular.ttf")
+}
+@font-face{
+    src:url("../fonts/JosefinSans-SemiBold.ttf")
+}
+
+/* public */
+img{
+    width:100%;
+}
+ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+a{
+text-decoration: none;
+color:black;
+}
+a:hover{
+    color:black;
+    text-decoration: none;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    color:white;
+    background-color: #121212;
+    font-family:JosefinSans-Regular;
+}
+
+.bigBackground{
+    background-image:url("../images/bigImg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*******Header ****************/
+header{
+    padding-top:48px;
+}
+/********Navbar**********/
+.navbar-brand{
+    font-family: 'Boogaloo';
+    width:122px;
+    font-size: 40px;
+    color:white;
+}
+.navbar-brand:hover{
+    color:white;
+}
+.navbar{
+    width:100%;
+}
+.nav-item{
+    padding-left:27px;
+    padding-right:27px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-family:JosefinSans-Regular;
+    font-size:1.250em;
+    color:white;;
+    position: relative;
+padding:0
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active{
+    color:#E21F2F;
+}
+
+button.navbar-toggler {
+    position: relative;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 0;
+    opacity: 1;
+    border:1px solid #E21F2F;
+    text-align: center;
+    width:50px;
+    
+
+}
+button.navbar-toggler i {
+    background-color: #E21F2F;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    animation: nav2 0.8s backwards;
+    animation-direction: reverse;
+    margin-bottom:5px;
+}
+button.navbar-toggler i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: nav1 0.8s backwards;
+    animation: nav1 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;}
+.mobileMenu i:nth-child(3) {
+        -webkit-animation: nav3 0.8s backwards;
+        animation: nav3 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+.scrollNav {
+        top: 0 !important;
+        z-index: 99999999999999999999999;
+        animation-duration: .5s;
+        background:black;
+        position: fixed !important;
+        box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
+        transition: 1s all;
+        left: 0;
+        width:100%;
+        right:0;
+        padding:5px 0;
+        transition: all .5s;;
+        animation:sticky;
+    }
+    /****************Animation of mobile Toggler****************/
+@-webkit-keyframes nav1 {
+    50% {
+      -webkit-transform: rotate(0deg); }
+    100% {
+      -webkit-transform: rotate(45deg); } }
+  @keyframes nav1 {
+    50% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(45deg); } }
+
+  @-webkit-keyframes nav2 {
+    0% {
+      -webkit-transform: translateY(0px) rotate(0deg); }
+    50% {
+      -webkit-transform: translateY(9px) rotate(0deg); }
+    100% {
+      -webkit-transform: translateY(9px) rotate(135deg); } }
+  @keyframes nav2 {
+    0% {
+      transform: translateY(0px) rotate(0deg); }
+    50% {
+      transform: translateY(9px) rotate(0deg); }
+    100% {
+      transform: translateY(9px) rotate(135deg); } }
+  @-webkit-keyframes nav3 {
+    0% {
+      -webkit-transform: translateY(0px) rotate(0deg); }
+    50% {
+      -webkit-transform: translateY(-9px) rotate(0deg); }
+    100% {
+      -webkit-transform: translateY(-9px) rotate(135deg); } }
+  @keyframes nav3{
+    0% {
+      transform: translateY(0px) rotate(0deg); }
+    50% {
+      transform: translateY(-9px) rotate(0deg); }
+    100% {
+      transform: translateY(-9px) rotate(135deg); } 
+    }
+/*********End Mobile Toggler Animation********/
+/*-----------------Hero Section--------------------*/
+.heroSection{
+vertical-align: middle;
+margin-top:390px;
+text-align: center;
+padding-bottom: 344px;
+}
+.heroSection h1{
+font-size:4.375em;
+margin-bottom:50px;
+font-family:JosefinSans-SemiBold;
+
+}
+.joinUs{
+    width:209px;
+    font-size:1.25rem;
+    border: 2px solid #FFFFFF;;
+    height: 60px;
+    text-align: center;
+    color:white;
+    line-height: 47px;
+}
+.joinUs:hover{
+    background-color: white;
+    color:#E21F2F;
+}
+.title{
+    margin-bottom:65px;
+}
+.title h2{
+    font-size:2.5em;
+    color:white;
+}
+.title p{
+    font-size:1.25em;
+    color:#707070;
+}
+section{
+    padding-top:102px;
+}
+#aboutus video{
+    width:100%;
+    position: relative;
+}
+.playVideo{
+    width:104px;
+    height:104px;
+    border-radius: 50%;
+    left:50%;
+    top:50%;
+    position: absolute
+}
+.musicImg img{
+    height:100%;
+}
+.musicImg{
+    width:100%;
+    height:300px;
+    overflow: hidden;
+}
+.musicImg video{
+    width:100%;
+    width: 100%;
+    object-fit: cover;
+   
+}
+.MusicBox h3{
+    font-size: 2.0625em;
+    font-family: 'Boogaloo';
+    color:white;
+    margin-top:17px;
+}
+.musicBtn{
+    width:182px;
+    height:50px;
+    line-height: 40px;;
+    color:white;
+    text-align: center;
+    margin-top:63px;
+    background-color: #E21F2F;
+border-radius: 0;
+}
+.musicBtn:hover{
+    color:#E21F2F;
+    text-align: center;
+    margin-top:63px;
+    background-color:white;
+}
+.Imagesection{
+    width:100%;
+}
+.upcomingImg{
+    width:100%;
+    position: relative;
+    overflow: hidden;
+  
+}
+
+.upcomingImg:hover::before{
+    opacity: .9;
+    transition: all .5s;;
+}
+.upcomingImg::before{
+    position: absolute;
+    width:100%;
+    background-color: #E21F2FB3;
+    content: "";
+    z-index: 11;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    height:100%;
+    opacity: 0;
+    transition: all .5s;;
+}
+.byTicket{
+    position: absolute;
+    color:white;
+    font-size:20px;
+    text-decoration: underline;
+    bottom:32px;
+    left:32px;
+    z-index: 22;
+    display: none;
+    transition: all .5s;;
+}
+.byTicket:hover{
+    color:white;
+}
+.upcomingImg:hover .byTicket{
+    display: block;
+}
+.upcomingtxt{
+    position: absolute;
+    bottom:32px;
+    left:32px;
+    z-index: 22;
+}
+.upcomingImg:hover .upcomingtxt{
+    bottom: auto;
+    top:32px;
+    transition: all .5s;;
+}
+.upcomingtxt .date{
+    width:67px;
+    height:64px;
+    background-color: white;
+
+    display: inline-block;
+}
+.upcomingtxt .date p{
+    color:#121212;
+    font-size:1.125em;
+    height:50%;
+    margin:0;
+}
+.upcomingtxt .date .day{
+    font-size:  2.0625em;
+}
+.musicName{
+    display: inline-block;
+    margin-left:30px;
+}
+.musicName p{
+    font-size: 2.0625em;
+    color:white;
+    margin:0;
+}
+.musicName span{
+    font-size:1.125em;
+    color:#707070
+}
+.blogContainer{
+    background: rgba(255,255,255,.15);
+    padding:30px;
+    margin-bottom:30px;
+}
+.blogImg{
+    width:45%;
+    display: inline-block;
+    margin-right:28px;
+    float: left;
+    height:350px;
+}
+.blogImg img{
+    height:100%;
+}
+.blogText{
+    width:50%;
+    display: inline-block;
+    float: left;
+}
+.dateContainer{
+    margin-bottom:40px;
+}
+.dateContainer span{
+font-size:1.025em;
+color:white;
+
+}
+.BlogTitle{
+    font-size: 2.0625em;
+    margin-bottom:18px;
+    font-family:JosefinSans-SemiBold;
+}
+.blogText p{
+    font-size:1.125em;
+}
+.blogText .musicBtn{
+    margin-top:20px;
+    width:182px;
+    height:50px;
+    line-height: 40px;;
+}
+
+footer{
+    background-color: #E21F2F;
+    margin-top:100px;
+    padding:60px 0;
+}
+#contactUs .blogContainer{
+    padding:50px 0 50px 30px;
+    height:500px;
+}
+
+.blogContainer form h4{
+font-size:2.5em;
+font-family:JosefinSans-SemiBold;;
+margin-bottom:20px;
+
+}
+.blogContainer form 
+{width:60%;
+    float:left;
+}
+.formImg img{
+    height: 100%;;
+}
+.formImg{
+    width:38%;
+    position: absolute;
+   right:0;
+   height:500px;
+   top:0;
+}
+.blogContainer form p{
+    font-size :1.25em;
+    color:#707070
+}
+.form-group{
+    margin-top:40px;
+    width:48%;
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;;
+}
+.form-group i{
+    position: absolute;
+    right: 3px;
+    bottom: 10px;
+    z-index: 1;
+   color: #707070;
+}
+.form-control{
+background-color: transparent;
+border:0;
+border-radius: 0;;
+border: 1px solid transparent;
+border-bottom: 1px solid #707070;
+padding:10px;
+}
+.form-control:focus{
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid #707070
+}
+.form-control::placeholder{
+    color:#707070;
+    font-size:1.125em;
+    padding-bottom: 20px;;
+}
+.form-group.NoMargin{
+    margin-right: 0;;
+}
+.form-group.textareagroup{
+width:100%;
+display: block;
+
+}
+textarea{
+    resize: none;
+}
+button.musicBtn{
+    margin-top:30px;
+}
+#footer ul{
+    margin-top: 50px;
+
+}
+#footer li{
+display: inline-block;
+margin-right:50px;
+}
+#footer li:last-child{
+    margin-right:0;
+}
+#footer li a{
+    color:white;
+    font-size:1.125em;
+
+}
+#footer .sociaFooter li{
+    margin-right:20px;
+}
+#footer .sociaFooter li:last-child{
+    margin:0;
+}
+.sociaFooter li a:hover i.fa-facebook-f{
+    color:#3b5998;
+}
+.sociaFooter li a:hover i.fa-twitter{
+   color: #00acee;
+}
+.sociaFooter li a:hover i.fa-instagram{
+    color:  #3b5998 
+ }
+ .sociaFooter li a:hover i.fa-pinterest{
+    color: #3b5998 
+ }
+ .copyRight{
+     font-size :1.125em;
+     color:white;
+     margin-top:50px;
+ }
+@media(max-width:767px){
+    .heroSection {
+        vertical-align: middle;
+        margin-top: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .heroSection h1 {
+        font-size: 2.375em;}
+        .blogImg{
+            width:100%;
+            margin:0;
+        }
+    .blogText{
+        width:100%;
+        margin-top:20px;
+    }
+    .blogImg{
+        height:200px;
+    }
+    .upcomingImg{
+        margin-bottom:20px;
+    }
+    .upcomingtxt {
+        bottom: 10px;
+        left: 10px}
+.musicName p {
+font-size: 1.8625em;}
+.upcomingImg:hover .upcomingtxt {
+    bottom: auto;
+    top: 10px;}
+    .byTicket{
+        bottom:10px;
+        left:10px;
+    }
+    header{
+        padding:0;
+    }
+    section{
+        padding-top:30px;
+    }
+    footer{
+        margin-top:30px;
+        padding:20px;
+    }
+    .blogContainer form{
+        width:100%;
+        float: none;
+    }
+    .formImg{
+        width:100%;
+        margin-top:10px;
+        float: none;
+        position: relative;
+    }
+    .form-group{
+        width:100%;
+        margin:0;
+        margin-top:10px;
+    }
+    #contactUs .blogContainer{
+        padding:20px;
+        height:auto
+    }
+    .blogContainer{
+        padding:20px;
+    }
+    #footer li{
+        margin-right:25px;
+    }
+}
